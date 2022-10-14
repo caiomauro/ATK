@@ -1,0 +1,28 @@
+body{
+	background: url(bg_img.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.navbar-color{
+	background-color: orange;
+}
+
+a:link, a:visited{
+	margin: 5px;
+	padding: 5px;
+    border: 1px solid rgb(94, 94, 94);
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+	background-color: rgb(216, 216, 216);
+	color: black;
+	border-radius: 8px;
+}
+
+a:hover{
+	background-color: white;
+  }
+
+nav .navbar-nav li a:hover{
+	color: rgb(0, 0, 0) !important;
+}
+

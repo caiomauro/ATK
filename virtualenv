@@ -1,0 +1,7 @@
+Collecting virtualenv
+  Downloading virtualenv-20.16.5-py3-none-any.whl (8.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.8/8.8 MB 26.4 MB/s eta 0:00:00
+
+
+source newenv/bin/activate
+deactivate
