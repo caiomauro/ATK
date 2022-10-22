@@ -9,20 +9,16 @@ body{
 
 a:link, a:visited{
 	margin: 5px;
-	padding: 5px;
+	padding: 10px;
     border: 1px solid rgb(94, 94, 94);
     padding-left: 15px !important;
     padding-right: 15px !important;
 	background-color: rgb(216, 216, 216);
-	color: black;
+	color: rgb(0, 0, 0);
 	border-radius: 8px;
 }
 
 a:hover{
 	background-color: white;
   }
-
-nav .navbar-nav li a:hover{
-	color: rgb(0, 0, 0) !important;
-}
 
