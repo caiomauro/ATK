@@ -3,6 +3,6 @@ Collecting virtualenv
      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.8/8.8 MB 26.4 MB/s eta 0:00:00
 
 
-source newenv/bin/activate
+source env/bin/activate
 deactivate
 c:/Users/Caio/Desktop/react-django/ATK/env/Scripts/Activate.ps1

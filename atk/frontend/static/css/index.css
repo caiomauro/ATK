@@ -9,16 +9,21 @@ body{
 
 a:link, a:visited{
 	margin: 5px;
-	padding: 10px;
+	text-align: center;
+	padding: 5px;
     border: 1px solid rgb(94, 94, 94);
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+	width: 120px;
+	padding-left: 5px !important;
+    padding-right: 5px !important;
 	background-color: rgb(216, 216, 216);
 	color: rgb(0, 0, 0);
 	border-radius: 8px;
+	display: block;
 }
 
 a:hover{
 	background-color: white;
+	display: block;
+	color: orange; 
   }
 
