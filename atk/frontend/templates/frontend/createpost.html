@@ -1,0 +1,30 @@
+{% extends 'frontend/base.html' %}
+{% block title %} Home Page {% endblock %}
+{% block content %}
+<body>
+    <div class="container mx-auto" style="width: 80%; margin-top: 5%;">
+        <h1 style="text-align: center; margin-top: 10px;">Create Post</h1>
+        <div class="container-fluid border border-dark p-4" style="height: 70vh; background-color: rgba(255,255,255, .95)">
+            <h3 class="text-center my-4">This is a post for {{ user.username }}</h3>
+            <form method="post" action="{% url 'createpost' %}">
+                {% csrf_token %}
+                <div class="container">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">Title</label>
+                        <input type="text" name="title" class="form-control" id="title" placeholder="Title">
+                    </div>
+                    <div class="mb-3">
+                        <label for="content" class="form-label">Content</label>
+                        <textarea name="content" class="form-control" id="content" rows="3" placeholder="Content"></textarea>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary btn-sm" onclick="window.location.href='/home'">Cancel</button>
+                    <div style="width: 10px;"></div>
+                    <button type="submit" class="btn btn-primary btn-sm">Post</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+{% endblock %}

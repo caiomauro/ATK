@@ -1,11 +1,11 @@
 from django.db import models
-from django.contrib import admin
+from django.contrib.auth.models import User
 
 
 # Create your models here.
 
-class userInfo(models.Model):
-    password = models.CharField(max_length=20, default="", unique=True)
-    username = models.CharField(max_length=12, unique=True)
-    user_can_edit = models.BooleanField(null=False, default=False)
-
+class ForumPost(models.Model):
+    creator = models.ForeignKey(User, on_delete=models.CASCADE)
+    title = models.CharField(max_length=100)
+    content = models.TextField()
+    date_created = models.DateTimeField(auto_now_add=True)

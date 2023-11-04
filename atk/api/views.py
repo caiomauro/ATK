@@ -1,17 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from rest_framework import generics, status
-from .serializer import userInfoSerializer
-from .models import userInfo
+from .serializer import ForumPostSerializer
+from .models import ForumPost
 from rest_framework.views import APIView
 from rest_framework.response import Response
+
 # Create your views here.
 
-#view list of user
-
-class userInfoView(generics.ListAPIView):
-    queryset = userInfo.objects.all()
-    serializer_class = userInfoSerializer
-
-
-
+# View list of forum posts
+class ForumPostListView(generics.ListAPIView):
+    queryset = ForumPost.objects.all()
+    serializer_class = ForumPostSerializer

@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import userInfo
+from .models import ForumPost
 
-class userInfoSerializer(serializers.ModelSerializer):
+class ForumPostSerializer(serializers.ModelSerializer):
     class Meta:
-        model = userInfo
-        fields = ('id', 'username', 'password', 'user_can_edit')
+        model = ForumPost
+        fields = ('id', 'creator', 'title', 'content', 'date_created')
 

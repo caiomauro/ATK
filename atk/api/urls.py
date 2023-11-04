@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import userInfoView
+from .views import ForumPostListView
 
 urlpatterns = [
-    path('data/', userInfoView.as_view()),
+    path('forum-posts/', ForumPostListView.as_view(), name='forum-post-list'),
 ]
