@@ -4,7 +4,9 @@ Agent Toolkit (ATK) is a web-based toolbox designed for the Geek Squad, enabling
 
 
 ![Main Page](main.png)
-![Completed Tasks](completedtasks.png)
+![Completed Tasks](completed.png)
+![Login Page](login.png)
+
 
 ## Installation
 
