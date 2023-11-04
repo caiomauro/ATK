@@ -3,15 +3,16 @@
 Agent Toolkit (ATK) is a web-based toolbox designed for the Geek Squad, enabling them to create drives and download front desk software efficiently.
 
 
-![Main Page](main.png)
-![Completed Tasks](completed.png)
-![Create Post](createpost.png)
-![Login Page](login.png)
-
-<img src="main.png" alt="Main Page" width="500">
-<img src="completed.png" alt="Completed Tasks" width="500">
-<img src="createpost.png" alt="Create Post" width="500">
-<img src="login.png" alt="Login Page" width="500">
+<table>
+  <tr>
+    <td><img src="main.png" alt="Main Page" style="width:300px;"></td>
+    <td><img src="completed.png" alt="Completed Tasks" style="width:300px;"></td>
+  </tr>
+  <tr>
+    <td><img src="createpost.png" alt="Create Post" style="width:300px;"></td>
+    <td><img src="login.png" alt="Login Page" style="width:300px;"></td>
+  </tr>
+</table>
 
 ## Installation
 
