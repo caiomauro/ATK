@@ -31,6 +31,7 @@ Descriptive post information for moderation purposes
 
 ## Basic Usage
 After installing the required dependencies, navigate to the directory with ```manage.py``` to create a super user. (For security not anyone can sign up)
+
 Execute the following command and follow the prompts:
 
 ```bash
@@ -43,7 +44,7 @@ Once you create your super user, run the ATK application by executing the follow
 python manage.py runserver
 ```
 
-Once the server is running, you can access the ATK application by visiting the following URL in your web browser:
+Once the server is running, you can access the ATK application by visiting the following URL in your web browser (log in with your super user):
 
 ```
 http://127.0.0.1:8000/
