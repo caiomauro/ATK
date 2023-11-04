@@ -3,7 +3,8 @@
 Agent Toolkit (ATK) is a web-based toolbox designed for the Geek Squad, enabling them to create drives and download front desk software efficiently.
 
 
-![App Screenshot](atkpreview.png)
+![Main Page](main.png)
+![Completed Tasks](completedtasks.png)
 
 ## Installation
 
