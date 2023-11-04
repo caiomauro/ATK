@@ -15,16 +15,16 @@ pip install psycopg2-binary
 pip install psycopg
 ```
 
-##Description
+## Description
 
 ATK is built using Django, a high-level Python web framework that encourages rapid development and clean, pragmatic design. The tool is integrated with various modules and functionalities, including user authentication, forum post creation, and deletion. Users with staff privileges can manage posts effectively.
 
-##Features
+## Features
 User authentication and authorization
 Creation and deletion of forum posts
 User-specific functionalities
 
-##Usage
+## Usage
 After installing the required dependencies, you can run the ATK application by executing the following command:
 
 ```bash
@@ -37,5 +37,5 @@ Once the server is running, you can access the ATK application by visiting the f
 http://127.0.0.1:8000/
 ```
 
-##License
+## License
 This project is licensed under the MIT license.
