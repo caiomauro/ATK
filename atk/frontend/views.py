@@ -15,6 +15,13 @@ def home(request, *args, **kwargs):
 def login(request, *args, **kwargs):
     return render(request, 'frontend/login.html')
 
+@login_required
+def tools(request, *args, **kwargs):
+    return render(request, 'frontend/tools.html')
+
+@login_required
+def closelist(request, *args, **kwargs):
+    return render(request, 'frontend/closelist.html')
 def auth(request, *args, **kwargs):
     return render(request, 'frontend/auth.html')
 

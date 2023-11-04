@@ -13,16 +13,18 @@
             <div class="container">
                 {% for post in forum_posts %}
                     <div class="card my-4">
+                        {% if user.is_authenticated and user.is_staff %}
+                        <div class="position-absolute top-0 end-0 p-3">
+                            <form method="post" action="{% url 'delete_post' post.id %}">
+                                {% csrf_token %}
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this post?')">Delete</button>
+                            </form>
+                        </div>
+                        {% endif %}
                         <div class="card-body">
                             <h2 class="card-title">{{ post.title }}</h2>
                             <p class="card-text">{{ post.content }}</p>
                             <p class="card-text"><small class="text-muted">Created by {{ post.creator.username }} at {{ post.date_created }}</small></p>
-                            {% if user.is_authenticated and user.is_staff %}
-                                <form method="post" action="{% url 'delete_post' post.id %}">
-                                    {% csrf_token %}
-                                    <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure you want to delete this post?')">Delete</button>
-                                </form>
-                            {% endif %}
                         </div>
                     </div>
                 {% endfor %}
