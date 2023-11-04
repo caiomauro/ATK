@@ -2,9 +2,9 @@
 {% block title %} Home Page {% endblock %}
 {% block content %}
 <body>
-    <div class="container mx-auto" style="width: 80%; margin-top: 5%;">
+    <div class="container mx-auto" style="width: 80%; margin-top: 5%; background-color: rgba(248, 249, 250, 0.8);">
         <h1 style="text-align: center; margin-top: 10px;">Create Post</h1>
-        <div class="container-fluid border border-dark p-4" style="height: 70vh; background-color: rgba(255,255,255, .95)">
+        <div class="container-fluid border border-dark p-4" style="height: 70vh; background-color: rgba(248, 249, 250, 0.8); border-radius: 10px;">
             <h3 class="text-center my-4">This is a post for {{ user.username }}</h3>
             <form method="post" action="{% url 'createpost' %}">
                 {% csrf_token %}

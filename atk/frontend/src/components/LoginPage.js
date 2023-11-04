@@ -6,6 +6,6 @@ export default class LoginPage extends Component {
     }
 
     render() {
-        return (<p>Route For Login Page</p>);          
+        return (<p style="text-color: white;">Alpha build v1.2.1</p>);         
     }
 }

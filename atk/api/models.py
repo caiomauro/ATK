@@ -8,4 +8,5 @@ class ForumPost(models.Model):
     creator = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=100)
     content = models.TextField()
+    is_complete = models.BooleanField(default=False)
     date_created = models.DateTimeField(auto_now_add=True)

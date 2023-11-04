@@ -6,6 +6,6 @@ export default class AuthPage extends Component {
     }
 
     render() {
-        return (<p>route for auth page</p>);
+        return (<p style="color: white;">Alpha build v1.2.1</p>);
     }
 }

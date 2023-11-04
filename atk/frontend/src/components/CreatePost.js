@@ -6,6 +6,6 @@ export default class CreatePost extends Component {
     }
 
     render() {
-        return (<p>Route for create post page</p>);
+        return (<p style="color: white;">Alpha build v1.2.1</p>);
     }
 }

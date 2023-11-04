@@ -6,6 +6,6 @@ export default class HomePage extends Component {
     }
 
     render() {
-        return (<p>Route for home page</p>);
+        return (<p style="text-color: white;">Alpha build v1.2.1</p>);
     }
 }

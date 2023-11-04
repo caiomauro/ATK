@@ -9,5 +9,8 @@ urlpatterns = [
     path('createpost/', views.createpost, name="createpost"),
     path('deletepost/<int:post_id>/', views.delete_post, name='delete_post'),
     path('tools/', views.tools, name="tools"),
-    path('closelist/', views.closelist, name="closelist")
+    path('closelist/', views.closelist, name="closelist"),
+    path('markcomplete/<int:post_id>/', views.mark_complete, name='mark_complete'),
+    path('completedtasks/', views.completed_tasks, name='completed_tasks'),
+    path('markincomplete/<int:post_id>/', views.mark_incomplete, name='mark_incomplete'),
 ]

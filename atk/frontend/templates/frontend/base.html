@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
-    <title>{% block title %}Agent Toolkit Test Build{% endblock %}</title>
+    <title>{% block title %}Agent Toolkit v2.0.0{% endblock %}</title>
 </head> 
 
 <body style="overflow: auto;">
@@ -17,14 +17,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarContent">
-                <h1 class="navbar-brand mb-0 h1">Agent Toolkit Test Build</h1>
+                <h1 class="navbar-brand mb-0 h1">Agent Toolkit v2.0.0</h1>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     {% if user.is_authenticated %}
                         <li class="nav-item">
                             <a class="nav-link" href="/home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/cab/">CAB</a>
+                            <a class="nav-link" href="/completedtasks/">Done Tasks</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="/tools/">Tool Belt</a>
